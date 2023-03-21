@@ -1,0 +1,13 @@
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    float: right;
+    height: 2px;
+    background-color: var(--primary);
+    transition: width ease-in-out 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
