@@ -1,0 +1,21 @@
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--primary);
+    font-family: var(--primary-font);
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    margin: 0 auto;
+    background-color: var(--primary);
+    transition: width ease-in-out 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transform: translateX(0%);
+}
